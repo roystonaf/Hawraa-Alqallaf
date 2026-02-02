@@ -27,17 +27,6 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  margin-bottom: 22px;
-  line-height: 1.5;
-}
-
 button {
   font-size: 16px;
   padding: 10px 22px;
@@ -63,12 +52,11 @@ button {
 <body>
 
 <audio id="music" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_1c6b8b38c4.mp3" type="audio/mpeg">
+  <source src="https://cdn.pixabay.com/audio/2023/03/20/audio_8b6c1c7f4a.mp3" type="audio/mpeg">
 </audio>
 
 <div class="card">
   <h1>Hawra Alqallaf 💕</h1>
-
   <p>
     Ya Amar 🌙<br><br>
     From my heart to this screen…<br>
@@ -81,6 +69,10 @@ button {
 </div>
 
 <script>
+document.body.addEventListener("click", function () {
+  document.getElementById("music").play();
+}, { once: true });
+
 function sayYes() {
   document.body.innerHTML = `
     <div style="
@@ -96,20 +88,16 @@ function sayYes() {
       padding:20px;
     ">
       <h1>YAYYYY 💕🎉</h1>
-      <p>
-        You just made me the happiest person alive 🥹❤️<br><br>
-        Hawra… you are my سُكَّرَتِي forever 💖
-      </p>
+      <p>You just made me the happiest person alive 🥹❤️<br><br>
+      Hawra… you are my سُكَّرَتِي forever 💖</p>
     </div>
   `;
 }
 
 function moveNo() {
   const btn = document.getElementById("no");
-  const x = Math.random() * (window.innerWidth - 100);
-  const y = Math.random() * (window.innerHeight - 50);
-  btn.style.left = x + "px";
-  btn.style.top = y + "px";
+  btn.style.left = Math.random() * (window.innerWidth - 100) + "px";
+  btn.style.top = Math.random() * (window.innerHeight - 50) + "px";
 }
 </script>
 
