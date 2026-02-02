@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>For Hawra 💖</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
@@ -20,7 +20,7 @@
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(0,0,0,0.25);
       padding: 30px;
       border-radius: 20px;
       max-width: 330px;
@@ -35,6 +35,7 @@
     p {
       font-size: 16px;
       margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     button {
@@ -64,14 +65,25 @@
       padding: 8px 18px;
       border-radius: 20px;
     }
+
+    .credit {
+      font-size: 10px;
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+
+    .credit a {
+      color: white;
+      text-decoration: none;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- MUSIC (iPad / iPhone SAFE) -->
+  <!-- MUSIC: Pixabay – Maksym Malko -->
   <audio id="music" loop>
-    <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_1c6b8b38c4.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/audio/2023/09/30/audio_301235.mp3" type="audio/mpeg">
   </audio>
 
   <div class="card">
@@ -89,8 +101,17 @@
 
     <br>
 
-    <!-- PLAY MUSIC BUTTON (REQUIRED FOR iOS) -->
+    <!-- REQUIRED FOR iOS -->
     <button class="play-btn" onclick="playMusic()">▶️ Play Music</button>
+
+    <div class="credit">
+      Music by
+      <a href="https://pixabay.com/users/backgroundmusicforvideos-46459014/" target="_blank">
+        Maksym Malko
+      </a>
+      via
+      <a href="https://pixabay.com/" target="_blank">Pixabay</a>
+    </div>
   </div>
 
   <script>
